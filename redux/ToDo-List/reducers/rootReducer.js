@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import headerReducer from './headerReducer';
-import filterReducer from './filterReducer';
+import changeTodos from './changeTodos';
+import filterTodos from './filterTodos';
 
 export default combineReducers({
-  headerReducer,
-  filterReducer,
+  filterTodos,
+  changeTodos,
 });

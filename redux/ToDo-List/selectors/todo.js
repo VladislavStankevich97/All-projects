@@ -1,7 +1,5 @@
-import getFilter from './filter';
-import { SHOW_ACTIVE, SHOW_COMPLETED } from '../actions/constants';
-
-const getTodo = (state) => state.headerReducer.data;
+import { getTodo, getFilter } from "./globalSelectors";
+import { SHOW_ACTIVE, SHOW_COMPLETED } from "../actions/constants";
 
 const getSortedTodos = (state) => {
   const mas = getTodo(state);

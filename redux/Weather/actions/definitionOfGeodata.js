@@ -6,5 +6,5 @@ export const definitionOfGeodata = (latitude, longitude) => (dispatch) => {
     `https://api.weatherbit.io/v2.0/current?lat=${latitude}&lon=${longitude}&key=${API_KEY_SERVER_WEATHERBIT}`
   )
     .then((respone) => respone.json())
-    .then((json) => dispatch(putWeatherServerWeatherbit(json)));
+    .then((json) => {console.log(json) ; return dispatch(putWeatherServerWeatherbit(json))});
 };

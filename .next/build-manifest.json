@@ -14,10 +14,10 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
+    "/404": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/404.js"
     ],
     "/_app": [
       "static/chunks/main.js",
@@ -29,10 +29,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/weather": [
+    "/next/dist/pages/_error": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/weather.js"
+      "static/chunks/pages/next/dist/pages/_error.js"
+    ],
+    "/todo-list": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/todo-list.js"
     ]
   },
   "ampFirstPages": []

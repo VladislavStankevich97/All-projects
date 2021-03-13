@@ -23,8 +23,6 @@ function UserGeolocation(props) {
   }, []);
 
   return <div>
-    {/* <p>{lat}</p>
-    <p>{lon}</p> */}
   </div>;
 }
 

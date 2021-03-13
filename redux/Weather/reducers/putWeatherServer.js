@@ -11,6 +11,8 @@ const initialState = {
   description: "",
   windSpeed: "",
   errMessage: "",
+  lat: "",
+  lon: "",
 };
 
 const putWeatherServer = (state = initialState, action) => {
@@ -40,6 +42,8 @@ const putWeatherServer = (state = initialState, action) => {
         temp: tempServer2,
         description: action.payload.data[0].weather.description,
         windSpeed: windSpeedServer2,
+        lat: action.payload,
+        lon: action.payload,
         errMessage: "",
       };
     case ERR_MESSAGE:

@@ -1,23 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Checkbox } from "@material-ui/core";
-import { deleteTodo, toggleTodo } from "../../redux/ToDo-List/actions/action";
-import Footer from "./Footer";
+import { deleteTodo, toggleTodo } from "../../redux/ToDo-List/actions/todoСhanges";
 import getSortedTodos from "../../redux/ToDo-List/selectors/todo";
 
-function List(props) {
-  const { todos, onToggleTodo, onDeleteTodo } = props;
-  const handler = (id) => () => {
-    onDeleteTodo(id);
-  };
+function List({ todos, onToggleTodo, onDeleteTodo }) {
   return (
     <div>
       {todos.map((todo, index) => (
         <li
           key={todo.id}
-          className={
-            todo.completed ? "tasksCompleted" : "tasksUncompleted"
-          }
+          className={todo.completed ? "tasksCompleted" : "tasksUncompleted"}
         >
           <span>{`№ ${index + 1}`}</span>
           <span className="task">{todo.message}</span>
@@ -25,26 +18,26 @@ function List(props) {
             checked={todo.completed}
             color="primary"
             inputProps={{ "aria-label": "secondary checkbox" }}
-            title="Выполнить задачу"
+            title="Completed task"
             onClick={onToggleTodo(todo.id)}
           />
           <Checkbox
             defaultChecked
             indeterminate
             inputProps={{ "aria-label": "indeterminate checkbox" }}
-            title="Удалить задачу"
+            title="Deleted task"
             label="Uncontrolled"
-            onClick={handler(todo.id)}
+            onClick={onDeleteTodo(todo.id)}
           />
         </li>
       ))}
-      <Footer />
 
       <style jsx>{`
         .tasksCompleted {
           margin-top: 40px;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          align-items: center;
           font-size: 25px;
           text-decoration: line-through;
           font-weight: bold;
@@ -53,12 +46,16 @@ function List(props) {
         .tasksUncompleted {
           margin-top: 40px;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
+          align-items: center;
           font-size: 25px;
           font-weight: normal;
         }
 
         .task {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
           margin: 0px 30px;
           width: 600px;
           max-width: 600px;
@@ -78,7 +75,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     onToggleTodo: (id) => () => dispatch(toggleTodo(id)),
-    onDeleteTodo: (id) => dispatch(deleteTodo(id)),
+    onDeleteTodo: (id) => () => dispatch(deleteTodo(id)),
   };
 }
 

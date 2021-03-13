@@ -1,6 +1,7 @@
 import React from "react";
 import List from "./List";
 import AddTodo from "./AddTodo";
+import FilterTodos from "./FilterTodos";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       >
         <AddTodo />
         <List />
+        <FilterTodos />
       </div>
     </div>
   );
