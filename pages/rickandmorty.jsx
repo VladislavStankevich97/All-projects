@@ -1,9 +1,12 @@
-import App from '../components/Rick and Morty/App'
+import App from "../components/Rick and Morty/App";
+import MainLayout from "../components/MainLayout/MainLayout";
 
 function Index() {
   return (
-    <App/>
-  )
+    <MainLayout>
+      <App />
+    </MainLayout>
+  );
 }
 
-export default Index
+export default Index;

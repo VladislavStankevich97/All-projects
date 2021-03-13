@@ -12,7 +12,6 @@ const initialState = {
 const modal = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_MODAL:
-      console.log(action.payload)
       return {
         ...state,
         image: action.payload.row.image,

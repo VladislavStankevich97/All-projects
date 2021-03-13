@@ -1,0 +1,28 @@
+.container{
+    opacity: 0.9;
+    background-color: #fff;
+    width: 620px;
+    margin-top: 150px;
+}
+
+.DataGrid{
+    border-radius: 10px solid red;
+    border-radius: 2rem;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left:620px;
+    margin-top: 222px;
+    width: 615px;   
+    height: 670px;  
+}
+
+.loader {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}

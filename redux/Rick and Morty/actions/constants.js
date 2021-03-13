@@ -7,3 +7,4 @@ export const SHOW_SPECIES = "SHOW_SPECIES";
 export const SHOW_GENDER = "SHOW_GENDER";
 export const SHOW_LOADER = "SHOW_LOADER";
 export const HIDE_LOADER = "HIDE_LOADER";
+export const REMEMBER_PAGE = "REMEMBER_PAGE";
