@@ -1,0 +1,26 @@
+.cars {
+  display: flex;
+  margin-top: 140px;
+}
+
+.car {
+  height: 530px;
+  width: 400px;
+  border: 4px double black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }

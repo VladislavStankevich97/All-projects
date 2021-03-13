@@ -1,0 +1,35 @@
+.cars {
+  display: flex;
+  margin-top: 140px;
+}
+
+.car {
+  height: 550px;
+  width: 550px;
+  border: 4px double black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.divLink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+

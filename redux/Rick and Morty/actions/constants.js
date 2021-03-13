@@ -1,0 +1,9 @@
+export const PUT_CHARACTERS = "PUT_CHARACTERS";
+export const LOAD_CHARACTERS = "LOAD_CHARACTERS";
+export const SHOW_MODAL = "SHOW_MODAL";
+export const HIDE_MODAL = "HIDE_MODAL";
+export const SHOW_STATUS = "SHOW_STATUS";
+export const SHOW_SPECIES = "SHOW_SPECIES";
+export const SHOW_GENDER = "SHOW_GENDER";
+export const SHOW_LOADER = "SHOW_LOADER";
+export const HIDE_LOADER = "HIDE_LOADER";
