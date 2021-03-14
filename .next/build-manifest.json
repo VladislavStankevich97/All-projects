@@ -24,15 +24,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/cars": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/cars.js"
+    ],
     "/rickandmorty": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/rickandmorty.js"
-    ],
-    "/todo-list": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/todo-list.js"
     ]
   },
   "ampFirstPages": []

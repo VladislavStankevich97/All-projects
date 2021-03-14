@@ -41,9 +41,9 @@ export default function Home() {
                 width={400}
                 height={400}
               />
-              <h2>Bwm</h2>
+              <h2>Bmw</h2>
               <Link href="/cars/bmw">
-                <a className={classes.link}>Посетить страницу с Bwm</a>
+                <a className={classes.link}>Посетить страницу с Bmw</a>
               </Link>
             </div>
 
